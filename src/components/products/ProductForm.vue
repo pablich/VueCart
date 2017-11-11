@@ -13,13 +13,16 @@
             <span class="small text-danger" v-show="errors.has('price')">Price is required</span>
         </div>
         <div class="form-group">
-
             <label>Manufacturer</label>
-            <select type="text" class="form-control" v-model="model.manufacturer" v-validate="'required'" name="manufacturer" :class="{'form-control': true, 'error': errors.has('manufacturer') }">
-            <template v-for="manufacturer in manufacturers">
-                <option :value="manufacturer._id" :selected="manufacturer._id == (model.manufacturer && model.manufacturer._id)">{{manufacturer.name}}</option>
-            </template>
-            </select>
+            <select
+          type="text"
+          class="form-control"
+          v-model="model.manufacturer._id"
+          v-validate="'required'"
+          name="manufacturer"
+          :class="{'form-control': true, 'error': errors.has('manufacturer') }">
+           <option v-for="manufacturer in manufacturers" :value="manufacturer._id">{{manufacturer.name}}</option>
+        </select>
             <span class="small text-danger" v-show="errors.has('manufacturer')">Manufacturer is required</span>
         </div>
         </div>

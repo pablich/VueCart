@@ -6,6 +6,7 @@ import Index from '../components/pages/admin/Index';
 import New from '../components/pages/admin/New';
 import Edit from '../components/pages/admin/Edit';
 import Products from '../components/pages/admin/Products';
+import Details from '../components/pages/Details';
 
 Vue.use(Router);
 
@@ -40,6 +41,10 @@ export default new Router({
       path: '/cart',
       name: 'Cart',
       component: Cart,
+    }, {
+      path: '/details/:id',
+      name: 'Details',
+      component: Details,
     },
   ],
 });

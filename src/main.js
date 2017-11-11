@@ -3,6 +3,7 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import store from './store';
 import VeeValidate from '../node_modules/vee-validate';
 
 Vue.config.productionTip = false;
@@ -11,6 +12,7 @@ Vue.use(VeeValidate);
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App },
 });
