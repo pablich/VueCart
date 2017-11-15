@@ -1,12 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from '../components/pages/Home';
-import Cart from '../components/pages/Cart';
-import Index from '../components/pages/admin/Index';
-import New from '../components/pages/admin/New';
-import Edit from '../components/pages/admin/Edit';
-import Products from '../components/pages/admin/Products';
-import Details from '../components/pages/Details';
+import Home from '../pages/Home';
+import Cart from '../pages/Cart';
+import Index from '../pages/admin/Index';
+import New from '../pages/admin/New';
+import Edit from '../pages/admin/Edit';
+import Products from '../pages/admin/Products';
+import Details from '../pages/Details';
 
 Vue.use(Router);
 

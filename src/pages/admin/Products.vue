@@ -26,7 +26,7 @@
 <script>
   import {
     REMOVE_PRODUCT,
-  } from '../../../store/mutations-types';
+  } from '../../store/mutations-types';
 
   export default {
     name: 'products',

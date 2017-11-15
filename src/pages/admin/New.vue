@@ -4,7 +4,7 @@
 </template>
 
 <script>
-  import ProductFrom from '../../products/ProductForm';
+  import ProductFrom from '../../components/products/ProductForm';
   export default {
     data () {
       return {
