@@ -14,7 +14,6 @@ export default new Vuex.Store({
     product: {},
     products: [],
     manufacturers: [],
-    isLogged: !!localStorage.getItem('token'),
   },
   // GETTERS
   getters: Object.assign({}, productGetters, manufacturerGetters),
